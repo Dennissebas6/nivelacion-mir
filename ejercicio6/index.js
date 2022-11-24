@@ -6,4 +6,16 @@ var pedro = {
 
 
 }
-console.log(pedro.edad);
+{
+    pedro.altura=1.80;
+}
+{
+    delete pedro.activo;
+}
+
+var llaves = Object.keys(pedro);
+for (var i=0; i < llaves.length; i++) {
+  var llave = llaves[i];
+  console.log(`${item} : ${pedro[llave]}`);
+
+}
